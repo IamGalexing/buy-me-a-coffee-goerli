@@ -1,0 +1,139 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 3rem 0 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 1.5rem 0 3.5rem 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+  transition: color 300ms, scale 0.7s;
+}
+
+.title:hover,
+.title:focus {
+  color: rgb(140, 203, 140);
+  scale: 1.1;
+}
+
+.connectButton {
+  padding: 7px 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  transition: color 400ms, background-color 300ms;
+}
+
+.sendButton {
+  padding: 7px;
+  margin: 0 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  transition: color 400ms, background-color 300ms;
+}
+
+.changeValueButton {
+  composes: sendButton;
+  border-radius: 50%;
+  font-weight: 900;
+  padding: 4px;
+  margin: 0 3px;
+  text-align: center;
+  width: 25px;
+}
+
+.sendButtonSet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.sendButton:hover,
+.sendButton:focus,
+.connectButton:hover,
+.connectButton:focus {
+  color: rgb(73, 70, 70);
+  background-color: rgb(140, 203, 140);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.inputSet {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.input {
+  outline: none;
+  width: 100%;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 4px;
+  transition: all 300ms;
+}
+
+.input:hover,
+.input:focus,
+.input:active {
+  outline: none;
+  border-color: rgb(140, 203, 140);
+}
+
+.message {
+  border: 2px white solid;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 15px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  transition: color 300ms, scale 0.7s;
+}
+
+.footer a:focus,
+.footer a:hover {
+  color: rgb(140, 203, 140);
+  scale: 1.03;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
